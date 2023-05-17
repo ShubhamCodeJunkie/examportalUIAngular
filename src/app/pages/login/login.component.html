@@ -1,0 +1,31 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-6 offset-md-3">
+
+
+
+          <h1 class="text-center">Login here !!</h1>
+          <form (ngSubmit)="loginformsumbit()">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>User Name</mat-label>
+              <input [(ngModel)]="LoginData.username" required  name="username" matInput placeholder="Enter here">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input [(ngModel)]="LoginData.password" required name="password" type="password" matInput placeholder="Enter here">
+            </mat-form-field>
+
+            <div class="container text-center">
+
+              <button type="submit" class="mb20" mat-raised-button color="primary">Login</button>
+              <button class="ml10 mb20" mat-raised-button color="accent">Reset</button>
+            </div>
+
+          </form>
+
+</div>
+  </div>
+    </div>
+  	  </div>
